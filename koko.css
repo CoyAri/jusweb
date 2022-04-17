@@ -1,0 +1,145 @@
+.main
+{
+    background-color: rgba(116, 97, 201, 0.589);
+}
+
+.head
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 1024px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.623);
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.body1
+{
+    margin: auto;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 666px 348px;
+    grid-column-gap: 10px;
+    background-color: rgba(255, 255, 255, 0.623);
+    padding-bottom: 25px;
+}
+
+.about-me
+{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+    max-width: 600px;
+    height: auto;
+    background-color: rgba(243, 189, 108, 0.623);
+}
+
+.info
+{
+    display: block;
+    text-align: left;
+    padding: 10px;
+    max-width: 304px;
+    height: auto;
+    background-color: rgba(243, 189, 108, 0.623);
+}
+
+.butt-ons
+{
+    height: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.education
+{
+    background-color: rgba(255, 255, 255, 0.623);
+    margin: auto;
+    max-width: 974px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 16px;
+}
+.education > div
+{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 150px;
+    column-gap: 25px;
+    margin-bottom: 9px;
+}
+
+.ed
+{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+
+.ed-info
+{
+    padding-left: 10px;
+    background-color: rgba(243, 189, 108, 0.623);
+}
+
+.contact-form
+{
+    max-width: 974px;
+    padding: 25px;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+
+.cf-in
+{
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.cf-pop
+{
+    margin: 10px;
+    height: 30px;
+    display: none;
+}
+
+.cf-button
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cf-button-desc
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sep
+{
+    display: flex;
+    align-items: center;
+}
+
+.sep .line
+{
+    height: 3px;
+    flex: 1;
+    background-color: #000;
+}
+
+.header
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cut-this
+{
+    text-decoration: none;
+}
