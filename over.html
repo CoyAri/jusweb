@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>webPort</title>
+        <link rel="stylesheet" href="./css/koko.css" type="text/css" />
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    <body class="main">
+        <!--class="head is where the image, name, and buttons are taken care off"-->
+        <div class="head">
+            <img src="image\IMG_3586.jpg" alt="Pic" width="400">
+            <h1>Angelo Mejia</h1>
+            <p>Web Designer</p>
+            <a class="cut-this" href="./resume/Resume.pdf" download>
+                <button class="butt-ons"><i class="fa fa-download"></i> Resume</button>
+            </a>
+            <a href="#cf">
+                <button class="butt-ons">Contact Me</button>
+            </a>
+        </div>
+        <!--class="body1" is where the about me, academic honesty and basic information is at"-->
+        <div class="body1">
+            <div class="about-me">
+                <h1>About Me and Academic Honesty</h1>
+                <p>Hello, my name is Angelo Mejia. I am from Philippines and I have been living in Canada for almost 8 years now. I wasn't really interested in anything code related until I took a computer science course on my last year of highschool, learning Java, where my interest in coding sprouts. Here now in college in my second semester, taking Computer Programming, I learned about C, C++, JavaScript, CSS, HTML, Database, and Linux.</p>
+                <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+                <p><strong>Date:</strong> Apr 13, 2022</p>
+            </div>
+            <div class="info">
+                <h1>Basic Information</h1>
+                <table class="about-table">
+                    <tbody>
+                        <tr>
+                            <td><strong>Age: </strong></td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Email: </strong></td>
+                            <td>amejia9@myseneca.ca</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Language: </strong></td>
+                            <td>English, Filipino</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Class Section: </strong></td>
+                            <td>NII</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Student ID: </strong></td>
+                            <td>115777211</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Instructor: </strong></td>
+                            <td>Mark Meritt</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--class="sep" is where the section title is, made into a class to add a little styling"-->
+        <div class="sep">
+            <div class="line"></div>
+            <h1 class="header">Education</h1>
+            <div class="line"></div>
+        </div>
+        <!--class="education" is where the education section is...."-->
+        <div class="education">
+            <div>
+                <div class="ed">
+                    <p>2021 - 2024(Expected)</p>
+                    <h3>Advanced Diploma</h3>
+                </div>
+                <div class="ed-info">
+                    <h3>Advanced Diploma</h3>
+                    <h4>Seneca College</h4>
+                    <p>Under the supervision of <span style="color:rgb(65, 99, 253)">Dr. Awesome.</span>Awarded with all the scholarships in the World</p>
+                </div>
+            </div>
+            <div>
+                <div class="ed">
+                    <p>2021 - 2024(Expected)</p>
+                    <h3>Advanced Diploma</h3>
+                </div>
+                <div class="ed-info">
+                    <h3>Advanced Diploma</h3>
+                    <h4>Seneca College</h4>
+                    <p>Under the supervision of <span style="color:rgb(65, 99, 253)">Dr. Awesome.</span>Awarded with all the scholarships in the World</p>
+                </div>
+            </div>
+        </div>
+        <!--class="sep" is where the section title is, made into a class to add a little styling"-->
+        <div class="sep">
+            <div class="line"></div>
+            <h1 class="header">Contact Me</h1>
+            <div class="line"></div>
+        </div>
+        <!--class="contact-form" is where you can contact me part is"-->
+        <div class="contact-form">
+            <form action="https://httpbin.org/post" method="POST" id="cf">
+                <input class="cf-in" type="text" name="Name" placeholder="Name">
+                <br>
+                <input class="cf-in" type="email" name="Email" placeholder="Email" required>
+                <br>
+                <input class="cf-in" type="text" name="Address" placeholder="Address" required>
+                <br>
+                <input class="cf-in" list="ca-cities" type="text" name="City" placeholder="City"required>
+                <br>
+                <input class="cf-in" type="text" name="Postal Code" placeholder="Postal Code" pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$" required>
+                <br>
+                <input class="cf-in" type="number" name="phone" placeholder="Phone (optional)" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
+                <br>
+                <label>Reason? </label>
+                <br>
+                <input class="cf-button" type="radio" id="question" name="reason" value="question" onclick="contactPop()">
+                <label class="cf-button-desc" for="question">Question</label>
+                <input class="cf-button" type="radio" id="comment" name="reason" value="comment" onclick="contactPop()">
+                <label class="cf-button-desc" for="comment">Comment</label>
+                <input class="cf-button" type="radio" id="hiring" name="reason" value="hiring" onclick="contactPop()">
+                <label class="cf-button-desc" for="hiring">Hiring</label>
+                <br>
+                <input class="cf-pop" type="number" id="hour-rate" name="rate" placeholder="Hourly Rate" pattern="/[1-9]\d{1,8}\.\d[{2}">
+                <br>
+                <textarea name="textbox" cols="30" rows="5" form="cf" placeholder="Comment or Question"></textarea>
+                <br>
+                <br>
+                <input class="butt-ons" type="submit" value="Submit">
+            </form>
+        </div>
+        <!--this is where capital cities of canada is"-->
+        <datalist id="ca-cities">
+            <option value="Charlottetown"></option>
+            <option value="Edmonton"></option>
+            <option value="Fredericton"></option>
+            <option value="Halifax"></option>
+            <option value="Iqaluit"></option>
+            <option value="Quebec City"></option>
+            <option value="Regina"></option>
+            <option value="St. John's"></option>
+            <option value="Toronto"></option>
+            <option value="Victoria"></option>
+            <option value="Whitehorse"></option>
+            <option value="Winnipeg"></option>
+            <option value="Yellowknife"></option>
+        </datalist>
+        <!--script for hiring button"-->
+        <script src="./js/script.js"></script>
+    </body>
+</html>
